@@ -1,0 +1,9 @@
+#!/usr/bin/python
+"""test cmd tool for theme generator."""
+
+import src as dotted
+
+if __name__ == '__main__':
+    import os
+    dotted.cli(os.getcwd()+'/share', dotted.get_install_path())
+
