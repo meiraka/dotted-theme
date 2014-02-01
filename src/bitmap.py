@@ -24,9 +24,7 @@ def pigment(filepath, savepath, color1, color2='#ffffff'):
         alpha = None
     elif image.mode == 'RGBA':
         _r, _g, _b, alpha = image.split()
-        print 'warning! file:'+filepath +' is '+image.mode
     else:
-        print 'warning! file:'+filepath +' is '+image.mode
         overlay = Image.new('RGB', image.size, rgb)
         overlay.save(savepath)
         return False

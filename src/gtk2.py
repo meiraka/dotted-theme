@@ -77,14 +77,12 @@ class Generator():
         """paint an image and save to save_path"""
         for i in self.__filter:
             if i[u'regex'].match(image_path):
-                print image_path,  i[u'color1'], i[u'color2']
                 bitmap.pigment(image_path, save_path, i[u'color1'], i[u'color2'])
                 break
 
     def __make_dirs(self, output_path):
         """Generate directory to make file."""
         if not os.path.exists(os.path.dirname(output_path)):
-            print 'make: '+os.path.dirname(output_path)
             os.makedirs(os.path.dirname(output_path))
 
     def generate(self):
