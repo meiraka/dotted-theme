@@ -278,7 +278,7 @@ style "scrollbar"
 			function		= BOX
 			recolorable		= TRUE
 			detail			= "trough"
-			file			= "colored/scrollbars/horizontal.png"
+			file			= "colored/scrollbars/horizontal-background.png"
 			border			= { 12,12, 0,0 }
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -880,7 +880,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= NORMAL
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/radio-normal-out.png"
+			overlay_file		= "colored/radio-buttons/normal-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -889,7 +889,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= PRELIGHT
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/radio-active-out.png"
+			overlay_file		= "colored/radio-buttons/active-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -898,7 +898,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= ACTIVE
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/radio-active-out.png"
+			overlay_file		= "colored/radio-buttons/active-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -907,7 +907,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= INSENSITIVE
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/radio-normal-out.png"
+			overlay_file		= "colored/radio-buttons/normal-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image
@@ -916,7 +916,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= NORMAL
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/radio-normal-in.png"
+			overlay_file		= "colored/radio-buttons/normal-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -925,7 +925,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= PRELIGHT
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/radio-active-in.png"
+			overlay_file		= "colored/radio-buttons/active-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -934,7 +934,7 @@ style "radiobutton"
 			recolorable		= TRUE
 			state 			= ACTIVE
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/radio-active-in.png"
+			overlay_file		= "colored/radio-buttons/active-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -943,14 +943,14 @@ style "radiobutton"
 			recolorable		= TRUE
 	 		state 			= INSENSITIVE
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/radio-normal-out.png"
+			overlay_file		= "colored/radio-buttons/normal-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image	#focus
 		{
 			function		= FOCUS
 			recolorable		= TRUE
-			file			= "colored/check-and-radio-buttons/focused.png"
+			file			= "colored/radio-buttons/background.png"
 			border			= { 10, 10, 0, 2 }
 			stretch			= TRUE
 		}
@@ -959,7 +959,7 @@ style "radiobutton"
 			function		= FLAT_BOX
 			recolorable		= FALSE
 			stretch			= TRUE
-			file			= "colored/check-and-radio-buttons/mouseover.png"
+			file			= "colored/radio-buttons/mouseover.png"
 			border			= { 10,10,9,9}
 		}
 	}
@@ -981,7 +981,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= NORMAL
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/check-normal-out.png"
+			overlay_file		= "colored/check-buttons/normal-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -990,7 +990,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= PRELIGHT
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/check-active-out.png"
+			overlay_file		= "colored/check-buttons/active-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image
@@ -999,7 +999,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= ACTIVE
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/check-active-out.png"
+			overlay_file		= "colored/check-buttons/active-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -1008,7 +1008,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= INSENSITIVE
 			shadow			= OUT
-			overlay_file		= "colored/check-and-radio-buttons/check-normal-out.png"
+			overlay_file		= "colored/check-buttons/normal-out.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -1017,7 +1017,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= NORMAL
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/check-normal-in.png"
+			overlay_file		= "colored/check-buttons/normal-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -1026,7 +1026,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= PRELIGHT
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/check-active-in.png"
+			overlay_file		= "colored/check-buttons/active-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image
@@ -1035,7 +1035,7 @@ style "checkbutton"
 			recolorable		= TRUE
 			state 			= ACTIVE
 			shadow			= IN
-			overlay_file		= "colored/check-and-radio-buttons/check-active-in.png"
+			overlay_file		= "colored/check-buttons/active-in.png"
 			overlay_stretch 	= FALSE
 		}
 		image 
@@ -1044,7 +1044,7 @@ style "checkbutton"
 			recolorable	 	= TRUE
 			 state 			= INSENSITIVE
 			 shadow			= IN
-			 overlay_file	 	= "colored/check-and-radio-buttons/check-normal-out.png"
+			 overlay_file	 	= "colored/check-buttons/normal-out.png"
 			 overlay_stretch 	= FALSE
 		}
 		image 
@@ -1052,14 +1052,14 @@ style "checkbutton"
 			function		= FLAT_BOX
 			recolorable		= TRUE
 			stretch			= TRUE
-			file			= "colored/check-and-radio-buttons/mouseover.png"
+			file			= "colored/check-buttons/mouseover.png"
 			border			= { 10,10,9,9 }
 		}
 		image	#focus
 		{
 			function		= FOCUS
 			recolorable		= TRUE
-			file			= "colored/check-and-radio-buttons/focused.png"
+			file			= "colored/check-buttons/background.png"
 			border			= { 10, 10, 0, 2 }
 			stretch			= TRUE
 		}
@@ -1068,7 +1068,7 @@ style "checkbutton"
 			function		= FLAT_BOX
 			recolorable		= TRUE
 			stretch			= TRUE
-			file			= "colored/check-and-radio-buttons/mouseover.png"
+			file			= "colored/check-buttons/mouseover.png"
 			border			= { 10,10,9,9}
 		}
 	}
