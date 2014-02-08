@@ -1,0 +1,11 @@
+
+@define-color fg_inactive #202020; 
+@define-color bg_inactive #FFFBE1; 
+@define-color fg_normal #202020; 
+@define-color bg_normal #FFFBE1; 
+@define-color fg_active #202020; 
+@define-color bg_active #E93830;
+
+
+@define-color link_color #605060; 
+@define-color error_color #805060; 
