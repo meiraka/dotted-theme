@@ -1,0 +1,9 @@
+#!/usr/bin/python
+
+import dotted
+
+if __name__ == '__main__':
+    import os
+    import sys
+    dotted.cli(sys.prefix+'/share/dotted-theme', dotted.get_install_path())
+
