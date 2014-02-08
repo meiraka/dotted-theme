@@ -4,9 +4,7 @@ import os
 import image
 
 class Generator(image.RecursiveEffector):
-    """A class for gkt3 theme generater.
-
-    """
+    """A class for gkt3 theme generater."""
     def __init__(self, resource_dir, output_dir):
         """Setup in/out resource path and default color.
 
@@ -67,4 +65,4 @@ class Generator(image.RecursiveEffector):
         f = open(self.__output_dir+'/gtk-3.0/'+input, 'w')
         f.write(a)
         f.close()
-        
+
