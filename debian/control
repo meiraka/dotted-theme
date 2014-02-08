@@ -1,0 +1,15 @@
+Source: dotted-theme
+Section: x11
+Priority: optional
+Maintainer: mei raka <meiraka.pre@gmail.com>
+Build-Depends: debhelper (>= 5), cdbs, python (>= 2.6), python-central (>= 0.5), python-setuptools
+Build-Depends-Indep: python-distutils-extra
+Standards-Version: 3.9.3
+XS-Python-Version: current
+
+Package: dotted-theme
+Architecture: all
+XB-Python-Version: ${python:Versions}
+Depends:  ${python:Depends}, ${misc:Depends}, python (>= 2.6), python-imaging, gtk2-engines-pixbuf
+Description: Customizable gtk theme
+ gtk2 and gtk3 theme.
