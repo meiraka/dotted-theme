@@ -747,7 +747,7 @@ style "toolbuttons"
 			function		= BOX
 			recolorable		= TRUE
 			state			= ACTIVE
-			file			= "colored/toolbuttons/active.png"
+			file			= "colored/toolbuttons/clicked.png"
 			border			= { 1,1,1,1 }
 			stretch			= TRUE
 		}
