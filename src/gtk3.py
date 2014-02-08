@@ -1,9 +1,9 @@
+"""gtk3 theme generator class."""
+
 import os
-import re
-import sys
 import image
 
-class Generator(image.RecursiveGenerator):
+class Generator(image.RecursiveEffector):
     """A class for gkt3 theme generater.
 
     """
@@ -15,7 +15,7 @@ class Generator(image.RecursiveGenerator):
         """
         self.__resource_dir = resource_dir
         self.__output_dir = output_dir
-        image.RecursiveGenerator.__init__(self, resource_dir+'/gtk-3.0/index', output_dir+'/gtk-3.0/colored')
+        image.RecursiveEffector.__init__(self, resource_dir+'/gtk-3.0/index')
 
     def generate(self):
         """Write gtk3 theme files to output dir.
@@ -24,7 +24,7 @@ class Generator(image.RecursiveGenerator):
         output_dir -- string output path (ex. /usr/share/themes/test)
         """
         self.__generate_rc(self.__output_dir)
-        self.paint_images()
+        self.paint(self.__output_dir+'/gtk-3.0/colored')
 
     def __generate_rc(self, output_dir):
 

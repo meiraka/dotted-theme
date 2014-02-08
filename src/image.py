@@ -3,22 +3,18 @@
 """
 import os
 import re
-import sys
 import bitmap
 
-class RecursiveGenerator(object):
-    """Recursive image generator.
-
-    """
+class RecursiveEffector(object):
+    """Recursive image effector. """
         
-    def __init__(self, resource_dir, output_dir):
+    def __init__(self, resource_dir):
         """Setup in/out resource path and default color.
 
         :resource_dir: input index colored image files dir.
         :output_dir: theme saved dir.
         """
         self.__resource_dir = resource_dir
-        self.__output_dir = output_dir
         self.__filter = []
         self.fg='#404040'
         self.bg='#ffffff'
@@ -26,21 +22,23 @@ class RecursiveGenerator(object):
         self.hbg='#808080'
         
     def add_filter(self, regex_format, hexcolor1, hexcolor2):
-        """add regex filter."""
+        """Adds regex filter."""
         self.__filter.append({u'str':regex_format, 
             u'regex':re.compile(regex_format), 
             u'color1':hexcolor1, 
             u'color2':hexcolor2})
 
     def clear_filter(self):
-        """clear regex filter."""
+        """Clears regex filter."""
         self.__filter = []
 
     def background(self, active, inactive):
+        """Sets widget background color."""
         self.bg = inactive
         self.hbg = active
 
     def font(self, active, inactive):
+        """Sets fonts color."""
         self.fg = inactive
         self.hfg = active
 
@@ -53,10 +51,10 @@ class RecursiveGenerator(object):
         self.add_filter(u'.+hover.+', active, inactive)
         self.add_filter(u'.+pressed.+', active, inactive)
 
-    def paint_images(self):
-        """!"""
+    def paint(self, output_dir):
+        """paint filter effectted images to output dir."""
         self.add_filter(u'.*', self.hbg, self.bg)
-        self.__paint_images(self.__resource_dir, self.__output_dir)
+        self.__paint_images(self.__resource_dir, output_dir)
 
     def __paint_images(self, input_dir, output_dir, root=''):
         """Convert gray scaled images to RGB images recursively."""
