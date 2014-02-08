@@ -2,10 +2,12 @@
 """Aggregates generator."""
 
 import gtk2
+import gtk3
 
 class Generator(object):
     def __init__(self, resource_dir, output_dir):
-        self.generators = [gtk2.Generator(resource_dir, output_dir)]
+        self.generators = [ gtk2.Generator(resource_dir, output_dir)
+                          , gtk3.Generator(resource_dir, output_dir)]
 
     def background(self, active, inactive):
         for g in self.generators:
