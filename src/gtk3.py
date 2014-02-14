@@ -40,17 +40,23 @@ class Generator(image.RecursiveEffector):
         color = """
             @define-color fg_inactive %(fg_)s; 
             @define-color bg_inactive %(bg_)s; 
+            @define-color eg_inactive %(eg_)s;
             @define-color fg_normal %(fg_)s; 
             @define-color bg_normal %(bg_)s; 
+            @define-color eg_normal %(eg_)s;
             @define-color fg_active %(hfg_)s; 
             @define-color bg_active %(hbg_)s;
+            @define-color eg_active %(heg_)s;
             @define-color link_color #605060; 
             @define-color error_color #805060; 
             """ % {
                 'fg_':self.fg,
                 'bg_':self.bg,
+                'eg_':self.eg,
                 'hfg_':self.hfg,
-                'hbg_':self.hbg}
+                'hbg_':self.hbg,
+                'heg_':self.heg,
+                '':''}
         f = open(self.__output_dir+'/gtk-3.0/color.css', 'w')
         f.write(color)
         f.close()
