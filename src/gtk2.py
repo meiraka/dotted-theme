@@ -67,13 +67,30 @@ class Generator(image.RecursiveEffector):
 
             }
 
-            style "menuitem"    #one of menu items    
+            style "menubar"
             {
             bg[NORMAL] = "%(hbg_)s" 
             bg[ACTIVE] = "%(bg_)s" 
             bg[PRELIGHT] = "%(bg_)s" 
             bg[SELECTED] = "%(bg_)s" 
             bg[INSENSITIVE] = "%(hbg_)s"
+            base[NORMAL] = "%(hbg_)s"
+            base[ACTIVE] = "%(hbg_)s" 
+            base[PRELIGHT] = "%(hbg_)s"
+            base[INSENSITIVE] = "%(hbg_)s"
+            base[SELECTED]     = "%(bg_)s"
+            }
+
+            class "GtkMenuBar*"                     style "menubar"
+            widget_class "*MenuBar.*"               style "menubar"
+
+            style "menuitem"    #one of menu items    
+            {
+            bg[NORMAL] = "%(heg_)s" 
+            bg[ACTIVE] = "%(eg_)s" 
+            bg[PRELIGHT] = "%(eg_)s" 
+            bg[SELECTED] = "%(eg_)s" 
+            bg[INSENSITIVE] = "%(heg_)s"
 
             fg[NORMAL] = "%(hfg_)s" 
             fg[ACTIVE] = "%(fg_)s" 
@@ -88,10 +105,12 @@ class Generator(image.RecursiveEffector):
             class "GtkTearoffMenuItem"    style "menuitem"
             #widget_class "*GtkToolbar*" style "toolbar-color"
             """ % {
-                'fg_':self.fg, 
-                'bg_':self.bg, 
-                'hfg_':self.hfg, 
-                'hbg_':self.hbg}
+                'fg_':self.fg,
+                'bg_':self.bg,
+                'hfg_':self.hfg,
+                'hbg_':self.hbg,
+                                'eg_':self.eg,
+                                'heg_':self.heg}
         f = open(self.__output_dir+'/gtk-2.0/colorrc', 'w')
         f.write(strings)
         f.close()

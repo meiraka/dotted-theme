@@ -44,6 +44,8 @@ class RecursiveEffector(object):
 
     def eventable(self, active, inactive):
         """Sets eventable object color."""
+        self.eg = inactive
+        self.heg = active
         self.add_filter(u'.+base.+', active, inactive)
         self.add_filter(u'.+normal.+', active, inactive)
         self.add_filter(u'.+active.+', active, inactive)

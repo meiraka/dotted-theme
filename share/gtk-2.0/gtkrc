@@ -246,7 +246,7 @@ style "menubar"	#root menubar
 		{
 			function	= BOX
 			state = PRELIGHT
-			file		= "colored/menubar/background.png"
+			file		= "colored/menubar/active.png"
 			border	= { 14, 14, 14, 2 }
 			stretch	= TRUE
     		}
@@ -262,7 +262,7 @@ class "GtkMenuBar*" 			style "menubar"
 widget_class "*MenuBar.*" 		style "menubar"
 widget_class "*.<MenuItem>."		style "menuitem"
 class "GtkMenuItem"			style "menuitem"
-class "GtkTearoffMenuItem"			style "menuitem"
+class "GtkTearoffMenuItem"		style "menuitem"
 
 
 
