@@ -69,15 +69,15 @@ class Generator(image.RecursiveEffector):
 
             style "menubar"
             {
-            bg[NORMAL] = "%(hbg_)s" 
+            bg[NORMAL] = "%(bg_)s" 
             bg[ACTIVE] = "%(bg_)s" 
             bg[PRELIGHT] = "%(bg_)s" 
             bg[SELECTED] = "%(bg_)s" 
-            bg[INSENSITIVE] = "%(hbg_)s"
-            base[NORMAL] = "%(hbg_)s"
-            base[ACTIVE] = "%(hbg_)s" 
-            base[PRELIGHT] = "%(hbg_)s"
-            base[INSENSITIVE] = "%(hbg_)s"
+            bg[INSENSITIVE] = "%(bg_)s"
+            base[NORMAL] = "%(bg_)s"
+            base[ACTIVE] = "%(bg_)s" 
+            base[PRELIGHT] = "%(bg_)s"
+            base[INSENSITIVE] = "%(bg_)s"
             base[SELECTED]     = "%(bg_)s"
             }
 
