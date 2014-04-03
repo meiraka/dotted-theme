@@ -104,6 +104,19 @@ class Generator(image.RecursiveEffector):
             class "GtkMenuItem"        style "menuitem"
             class "GtkTearoffMenuItem"    style "menuitem"
             #widget_class "*GtkToolbar*" style "toolbar-color"
+
+
+            style "list-header"  
+            {
+            GtkTreeView::odd_row_color = "%(bg_)s"
+            GtkTreeView::even_row_color = "%(bg_)s"
+            }
+
+            widget_class "*List" style "list-header"
+            widget_class "*GtkTree*" style "list-header"
+            widget_class "*GtkCList*" style "list-header"
+
+
             """ % {
                 'fg_':self.fg,
                 'bg_':self.bg,
